@@ -1,0 +1,104 @@
+$font_IBM_Plex_Mono: "IBM Plex Mono", monospace;
+$font_IBM_Plex_Sans: "IBM Plex Sans", sans-serif;
+$font_color_blue: #060a24;
+$font_color_white: #ffffff;
+
+// ------ Header Fonts ------ //
+@mixin font_menu_H01 {
+  font-family: $font_IBM_Plex_Mono;
+  font-size: 1em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+// ------ Main Fonts ------ //
+@mixin font_title_S01 {
+  font-family: $font_IBM_Plex_Sans;
+  font-size: 4em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  line-height: 5.25rem;
+  font-weight: 400;
+}
+
+@mixin font_paragraph_S01_S03 {
+  font-family: $font_IBM_Plex_Mono;
+  font-size: 1em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+@mixin font_button_S01 {
+  font-family: $font_IBM_Plex_Mono;
+  font-size: 1em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@mixin font_title_S02 {
+  font-family: $font_IBM_Plex_Sans;
+  font-size: 3em;
+  color: $font_color_white;
+  letter-spacing: 0;
+  line-height: 3.875rem;
+  font-weight: 400;
+}
+
+@mixin font_title_S03_S04_S05 {
+  font-family: $font_IBM_Plex_Sans;
+  font-size: 3em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  line-height: 3.875rem;
+  font-weight: 400;
+}
+
+@mixin font_title_S05_01 {
+  font-family: $font_IBM_Plex_Sans;
+  font-size: 1.5em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  line-height: 2rem;
+  font-weight: 600; 
+  text-align: center;
+}
+
+@mixin font_title_S06 {
+  font-family: $font_IBM_Plex_Sans;
+  font-size: 3em;
+  color: $font_color_white;
+  letter-spacing: 0;
+  line-height: 3.875rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+@mixin font_button_S06 {
+  font-family: $font_IBM_Plex_Mono;
+  font-size: 1.125em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+// ------ Footer Fonts ------ //
+@mixin font_footer {
+  font-family: $font_IBM_Plex_Mono;
+  font-size: 1em;
+  color: $font_color_blue;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
