@@ -5,8 +5,7 @@
 }
 
 .contBody {
-  max-width: 90rem;
-  width: auto;
+  width: 90rem;
   margin: auto; // Centrar pagina en el viewport
 
   //------------------------ Header Styles ------------------------//
@@ -34,7 +33,6 @@
 
     .nav_H01 {
       width: 30.125em; //482px;
-
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -70,6 +68,7 @@
       @include font_title_S01;
       position: absolute;
       top: 12.5rem;
+      width: 50.375rem;
     }
 
     .line {
@@ -107,7 +106,7 @@
 
     .backGradient_S02 {
       position: absolute;
-      width: 100%;
+      width: 90rem;
       height: 56.875em;
       transform: skewY(-5deg);
       transform-origin: right top;
@@ -157,6 +156,7 @@
     .title_S03 {
       @include font_title_S03_S04_S05;
       position: absolute;
+      width: 25rem;
       left: 45rem;
       top: 1.275rem;
     }
@@ -180,6 +180,7 @@
       position: absolute;
       left: 12.5rem;
       top: -6.13rem;
+      width: 30rem;
     }
 
     .gridImg_S04 {
@@ -204,6 +205,7 @@
       @include font_title_S03_S04_S05;
       position: absolute;
       top: 4rem;
+      width: 36.7rem;
     }
 
     .iconCont_S05 {
@@ -249,7 +251,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 90rem;
       height: 8.2875em; //132.6px;
       background-color: white;
       transform: skewY(-5deg);
