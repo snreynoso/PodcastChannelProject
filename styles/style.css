@@ -140,13 +140,13 @@
 
 .contBody .section_S02 {
   position: relative;
-  height: 65.15625em;
+  height: 65.15rem;
 }
 
 .contBody .section_S02 .backGradient_S02 {
   position: absolute;
   width: 90rem;
-  height: 56.875em;
+  height: 56.875rem;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
   -webkit-transform-origin: right top;
@@ -169,8 +169,8 @@
 
 .contBody .section_S02 .podcasts_S02 {
   position: absolute;
-  top: 17.125em;
-  left: 6.25em;
+  top: 17.125rem;
+  left: 6.25rem;
   /* GRID PODCAST */
   display: -ms-grid;
   display: grid;
@@ -443,14 +443,149 @@
   font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 320px) {
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen and (max-width: 1024px) and (min-width: 320px) {
   .contBody {
-    width: 100%;
+    width: 90rem;
+    margin: 0;
+    overflow-x: hidden;
   }
   .contBody header {
+    position: fixed;
+    height: 4.5rem;
+    background-color: rgba(255, 255, 255, 0.747);
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contBody header .logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contBody header .nav_H01 {
+    width: 50rem;
+  }
+  .contBody header .nav_H01 a {
+    font-size: x-large;
+  }
+  .contBody .section_S01 {
+    height: 24rem;
+    padding: 4.5rem 0 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contBody .section_S01 .title_S01 {
+    position: relative;
+    top: 0;
+  }
+  .contBody .section_S01 .paragraph_S01 {
+    font-size: x-large;
+    position: relative;
+    top: 0;
+  }
+  .contBody .section_S01 .button_S01 {
+    position: relative;
+    top: 0;
+  }
+  .contBody .section_S01 .button_S01:hover {
+    background: -webkit-gradient(linear, right top, left top, from(#0000fe), to(#00f0b8));
+    background: linear-gradient(270deg, #0000fe 0%, #00f0b8 100%);
+    color: white;
+  }
+  .contBody .section_S02 {
+    height: 44rem;
+  }
+  .contBody .section_S02 .backGradient_S02 {
+    position: absolute;
+    width: 90rem;
+    height: 44rem;
+    -webkit-transform: skewY(-2deg);
+            transform: skewY(-2deg);
+  }
+  .contBody .section_S02 .title_S02 {
+    position: relative;
+    top: 6rem;
+    left: 6rem;
+  }
+  .contBody .section_S02 .podcasts_S02 {
+    padding: 12rem 4rem 6rem 4rem;
+    top: 0;
+    left: 0;
     width: 100%;
+    /* GRID */
+    grid-gap: 1rem;
+  }
+  .contBody .section_S02 .podcasts_S02 .podBox_S02 {
+    border: none;
+    width: 100%;
+    height: 14rem;
+  }
+  .contBody .section_S03 {
+    height: 35rem;
+  }
+  .contBody .section_S03 .img_phone_S03 {
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    left: 15rem;
+    bottom: 5rem;
+  }
+  .contBody .section_S03 .title_S03 {
+    top: 4rem;
+    left: 40rem;
+  }
+  .contBody .section_S03 .paragraph_S03 {
+    font-size: x-large;
+    left: 40rem;
+    top: 10rem;
+    width: 29em;
+  }
+  .contBody .section_S04 {
+    position: relative;
+    height: 45.5rem;
+  }
+  .contBody .section_S04 .title_S04 {
+    left: 6rem;
+    top: -5rem;
+    width: 30rem;
+  }
+  .contBody .section_S05 .title_S05 {
+    top: 2rem;
+    left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .contBody {
+    width: 20rem;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .contBody header {
+    width: 20rem;
     height: 2.75rem;
-    background: white;
     padding: 0;
   }
   .contBody header .logo {
@@ -506,7 +641,8 @@
   .contBody header .nav_H01 {
     position: absolute;
     top: 2.75rem;
-    width: 100%;
+    right: -21rem;
+    width: 20rem;
     height: 14rem;
     -webkit-transition: 0.6s;
     transition: 0.6s;
@@ -520,7 +656,7 @@
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-color: #0000ec;
+    background-color: #0000ecc7;
   }
   .contBody header .nav_H01 a {
     font-family: "IBM Plex Mono", monospace;
@@ -534,8 +670,8 @@
     color: rgba(200, 204, 233, 0.781);
   }
   .contBody header #menuHam_H01:checked ~ .nav_H01 {
-    -webkit-transform: translateX(-20rem);
-            transform: translateX(-20rem);
+    -webkit-transform: translateX(-21rem);
+            transform: translateX(-21rem);
   }
   .contBody .section_S01 {
     height: 21.7rem;
@@ -567,15 +703,18 @@
   }
   .contBody .section_S02 .backGradient_S02 {
     position: absolute;
+    width: 20rem;
     height: 73.25rem;
   }
   .contBody .section_S02 .title_S02 {
+    position: absolute;
     font-size: 2.25rem;
     line-height: 2.63rem;
     top: 4rem;
     left: 1rem;
   }
   .contBody .section_S02 .podcasts_S02 {
+    padding: 0;
     top: 7.94rem;
     left: 0.69rem;
     display: block;
@@ -636,6 +775,7 @@
   }
   .contBody .section_S05 {
     height: 63.63rem;
+    padding: 0;
   }
   .contBody .section_S05 .title_S05 {
     font-size: 2.25rem;

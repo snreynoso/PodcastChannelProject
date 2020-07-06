@@ -1,12 +1,18 @@
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-@media only screen and (max-width: $tablet) and (min-width: 321px){
+@media only screen and (max-width: $tablet) and (min-width: $mobile) {
+  // body {
+  //  width: 90rem;
+  // }
   .contBody {
-    width: 100%;
+    width: 90rem;
+    margin: 0;
+    overflow-x: hidden;
 
+    //------------------------ Header Styles ------------------------//
     header {
       position: fixed;
       height: 4.5rem;
-      background-color: rgb(255, 0, 0);
+      background-color: rgba(255, 255, 255, 0.747);
       z-index: 10;
 
       display: flex;
@@ -17,45 +23,39 @@
       .logo {
         align-self: center;
       }
+
+      .nav_H01 {
+        width: 50rem;
+
+        a {
+          font-size: x-large;
+        }
+      }
     }
 
+    //---------------------- Section 01 Styles ----------------------//
     .section_S01 {
-      position: relative;
-      //height: 40%; //369px;
-      padding: 3.5srem 1rem;
+      height: 24rem;
+      padding: 4.5rem 0 1rem 0;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
 
       .title_S01 {
-        position: static;
-        //left: 0; // 200px;
-        //top: 7.5rem; //120px; */
-      }
-
-      .line {
-        text-decoration: line-through; // Para tachar la palabra world
+        position: relative;
+        top: 0;
       }
 
       .paragraph_S01 {
-        position: static;
-        // left: 0; // 200px;
-        // top: 12.75rem; //204px;
-        // max-width: 39.25em; //628px;
-        // width: 100%;
+        font-size: x-large;
+        position: relative;
+        top: 0;
       }
 
       .button_S01 {
-        position: static;
-        // top: 19.25em; //308px;
-        //left: 0; // 200px;
-
-        width: 14.125em; //226px;
-        height: 3.5em; //56px;
-        background: #00f3bb;
-        border: none;
-        cursor: pointer;
+        position: relative;
+        top: 0;
       }
 
       .button_S01:hover {
@@ -63,24 +63,85 @@
         color: white;
       }
     }
-  }
 
-  .podcasts_S02 {
-    position: absolute;
-    top: 17.125em; //274px;
-    left: 6.25em; //100px;
-    //width: auto;
+    //---------------------- Section 02 Styles ----------------------//
+    .section_S02 {
+      height: 44rem;
 
-    /* GRID */
-    display: grid;
-    grid-template-columns: auto auto; //584px 584px;
-    grid-template-rows: auto auto; //232px 232px;
-    grid-gap: 4.5em; //72px;
+      .backGradient_S02 {
+        position: absolute;
+        width: 90rem;
+        height: 44rem;
+        transform: skewY(-2deg);
+      }
 
-    .podBox_S02 {
-      border: none;
-      //width: 36.5em; //584px;
-      //height: 14.5em; //232px;
+      .title_S02 {
+        position: relative;
+        top: 6rem;
+        left: 6rem;
+      }
+
+      .podcasts_S02 {
+        padding: 12rem 4rem 6rem 4rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        /* GRID */
+        grid-gap: 1rem;
+
+        .podBox_S02 {
+          border: none;
+          width: 100%;
+          height: 14rem;
+        }
+      }
+    }
+
+    //---------------------- Section 03 Styles ----------------------//
+    .section_S03 {
+      height: 35rem;
+
+      .img_phone_S03 {
+        position: absolute;
+        width: 20rem;
+        height: 30rem;
+        left: 15rem;
+        bottom: 5rem;
+      }
+
+      .title_S03 {
+        top: 4rem;
+        left: 40rem;
+      }
+
+      .paragraph_S03 {
+        font-size: x-large;
+        left: 40rem;
+        top: 10rem;
+        width: 29em;
+      }
+    }
+
+    //---------------------- Section 04 Styles ----------------------//
+    .section_S04 {
+      position: relative;
+      height: 45.5rem;
+
+      .title_S04 {
+        left: 6rem;
+        top: -5rem;
+        width: 30rem;
+      }
+    }
+
+    //---------------------- Section 05 Styles ----------------------//
+    .section_S05 {
+      
+      .title_S05 {
+        top: 2rem;
+          left: 6rem;
+      }
     }
   }
 }

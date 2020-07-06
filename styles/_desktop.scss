@@ -102,12 +102,12 @@
   //---------------------- Section 02 Styles ----------------------//
   .section_S02 {
     position: relative;
-    height: 65.15625em;
+    height: 65.15rem;
 
     .backGradient_S02 {
       position: absolute;
       width: 90rem;
-      height: 56.875em;
+      height: 56.875rem;
       transform: skewY(-5deg);
       transform-origin: right top;
       background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
@@ -123,8 +123,8 @@
 
     .podcasts_S02 {
       position: absolute;
-      top: 17.125em;
-      left: 6.25em;
+      top: 17.125rem;
+      left: 6.25rem;
 
       /* GRID PODCAST */
       display: grid;
