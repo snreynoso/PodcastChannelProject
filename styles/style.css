@@ -12,7 +12,8 @@
 
 .contBody header {
   position: fixed;
-  width: 90rem;
+  max-width: 90rme;
+  width: 100%;
   height: 5em;
   background-color: rgba(255, 255, 255, 0.897);
   padding: 0 6.25rem;
@@ -446,14 +447,17 @@
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 @media only screen and (max-width: 1024px) and (min-width: 320px) {
   .contBody {
-    width: 90rem;
+    width: 64rem;
     margin: 0;
     overflow-x: hidden;
   }
   .contBody header {
     position: fixed;
+    max-width: 64rem;
+    width: 100%;
     height: 4.5rem;
     background-color: rgba(255, 255, 255, 0.747);
+    padding: 0 3rem;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -475,10 +479,13 @@
         align-self: center;
   }
   .contBody header .nav_H01 {
-    width: 50rem;
+    padding-left: 2rem;
+    max-width: 35rem;
+    min-width: 30rem;
+    width: 100%;
   }
   .contBody header .nav_H01 a {
-    font-size: x-large;
+    font-size: large;
   }
   .contBody .section_S01 {
     height: 24rem;
@@ -519,7 +526,7 @@
   }
   .contBody .section_S02 .backGradient_S02 {
     position: absolute;
-    width: 90rem;
+    width: 64rem;
     height: 44rem;
     -webkit-transform: skewY(-2deg);
             transform: skewY(-2deg);
