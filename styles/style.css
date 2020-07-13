@@ -6,15 +6,17 @@
 }
 
 .contBody {
-  width: 90rem;
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
   margin: auto;
 }
 
 .contBody header {
+  max-width: 1440px;
   position: fixed;
-  max-width: 90rme;
   width: 100%;
-  height: 5em;
+  height: 5rem;
   background-color: rgba(255, 255, 255, 0.897);
   padding: 0 6.25rem;
   z-index: 10;
@@ -65,6 +67,7 @@
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .contBody header .nav_H01 a:hover {
@@ -83,8 +86,9 @@
 
 .contBody .section_S01 {
   position: relative;
+  width: 100%;
   height: 28.06rem;
-  padding-left: 12.5rem;
+  padding: 12.5rem 13.89% 0.31rem 13.89%;
 }
 
 .contBody .section_S01 .title_S01 {
@@ -94,9 +98,10 @@
   letter-spacing: 0;
   line-height: 5.25rem;
   font-weight: 400;
-  position: absolute;
-  top: 12.5rem;
-  width: 50.375rem;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .contBody .section_S01 .line {
@@ -110,8 +115,7 @@
   letter-spacing: 0;
   line-height: 1.5rem;
   font-weight: 400;
-  position: absolute;
-  top: 17.75rem;
+  position: relative;
   width: 39.25em;
 }
 
@@ -124,8 +128,8 @@
   line-height: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
-  position: absolute;
-  top: 24.25em;
+  position: relative;
+  bottom: -3.5rem;
   width: 14.125em;
   height: 3.5em;
   background: #00f3bb;
@@ -141,12 +145,19 @@
 
 .contBody .section_S02 {
   position: relative;
+  width: 100%;
   height: 65.15rem;
+}
+
+.contBody .section_S02 #episodios {
+  position: absolute;
+  top: 3rem;
 }
 
 .contBody .section_S02 .backGradient_S02 {
   position: absolute;
-  width: 90rem;
+  max-width: 1440px;
+  width: 100%;
   height: 56.875rem;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
@@ -164,14 +175,16 @@
   line-height: 3.875rem;
   font-weight: 400;
   position: absolute;
-  top: 11.625rem;
+  top: 11.63rem;
   left: 12.5rem;
 }
 
 .contBody .section_S02 .podcasts_S02 {
   position: absolute;
   top: 17.125rem;
-  left: 6.25rem;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 6.25rem;
   /* GRID PODCAST */
   display: -ms-grid;
   display: grid;
@@ -184,103 +197,16 @@
 
 .contBody .section_S02 .podcasts_S02 .podBox_S02 {
   border: none;
-  width: 36.5em;
+  max-width: 36.5em;
+  width: 100%;
   height: 14.5em;
 }
 
 .contBody .section_S03 {
   position: relative;
-  height: 40.8375rem;
-}
-
-.contBody .section_S03 .img_phone_S03 {
-  position: absolute;
-  width: 28.6rem;
-  height: 41.25rem;
-  left: 12.5rem;
-  bottom: 10.125rem;
-}
-
-.contBody .section_S03 .title_S03 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
-  color: #060a24;
-  letter-spacing: 0;
-  line-height: 3.875rem;
-  font-weight: 400;
-  position: absolute;
-  width: 25rem;
-  left: 45rem;
-  top: 1.275rem;
-}
-
-.contBody .section_S03 .paragraph_S03 {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
-  color: #060a24;
-  letter-spacing: 0;
-  line-height: 1.5rem;
-  font-weight: 400;
-  position: absolute;
-  left: 45em;
-  top: 6.65em;
-  width: 29em;
-}
-
-.contBody .section_S04 {
-  position: relative;
-  height: 45.5rem;
-}
-
-.contBody .section_S04 .title_S04 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
-  color: #060a24;
-  letter-spacing: 0;
-  line-height: 3.875rem;
-  font-weight: 400;
-  position: absolute;
-  left: 12.5rem;
-  top: -6.13rem;
-  width: 30rem;
-}
-
-.contBody .section_S04 .gridImg_S04 {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.contBody .section_S04 .gridImg_S04 .imgInvitados {
-  width: 30rem;
-  height: 22.75rem;
-}
-
-.contBody .section_S05 {
-  position: relative;
-  height: 26.625em;
-  padding: 0 12.5rem;
-}
-
-.contBody .section_S05 .title_S05 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
-  color: #060a24;
-  letter-spacing: 0;
-  line-height: 3.875rem;
-  font-weight: 400;
-  position: absolute;
-  top: 4rem;
-  width: 36.7rem;
-}
-
-.contBody .section_S05 .iconCont_S05 {
-  position: absolute;
-  width: auto;
-  top: 11.375rem;
+  width: 100%;
+  height: 40.84rem;
+  padding: 0 17.78% 0 13.89%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,10 +219,143 @@
           justify-content: space-between;
 }
 
+.contBody .section_S03 #nosotros {
+  position: absolute;
+  top: -18rem;
+}
+
+.contBody .section_S03 .img_phone_S03 {
+  display: block;
+  position: relative;
+  bottom: 10.125rem;
+  width: 28.6rem;
+  height: 41.25rem;
+}
+
+.contBody .section_S03 .col_sec_S03 {
+  max-width: 29rem;
+  min-width: 20rem;
+}
+
+.contBody .section_S03 .col_sec_S03 .title_S03 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3em;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 3.875rem;
+  font-weight: 400;
+}
+
+.contBody .section_S03 .col_sec_S03 .paragraph_S03 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1em;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.contBody .section_S04 {
+  position: relative;
+  width: 100%;
+}
+
+.contBody .section_S04 #entrevistas {
+  position: absolute;
+  top: -12rem;
+}
+
+.contBody .section_S04 .title_S04 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3em;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 3.875rem;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  left: 12.5rem;
+  top: -2.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.contBody .section_S04 .gridImg_S04 {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  /* GRID PODCAST */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-gap: 0;
+}
+
+.contBody .section_S04 .gridImg_S04 .imgInvitados {
+  border: none;
+  max-width: 30rem;
+  width: 100%;
+  max-height: 22.75rem;
+  min-height: 16rem;
+}
+
+.contBody .section_S05 {
+  position: relative;
+  width: 100%;
+  height: 26.625em;
+  padding: 0 13.89%;
+}
+
+.contBody .section_S05 #topico {
+  position: absolute;
+  top: -3 rem;
+}
+
+.contBody .section_S05 .title_S05 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3em;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 3.875rem;
+  font-weight: 400;
+  position: relative;
+  top: 4rem;
+  width: 36.7rem;
+}
+
+.contBody .section_S05 .iconCont_S05 {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .contBody .section_S05 .iconCont_S05 .blockIcon {
   position: relative;
-  width: 16.25em;
-  height: 13.125em;
+  max-width: 16.25em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +370,8 @@
 
 .contBody .section_S05 .iconCont_S05 .blockIcon .icon_S05 {
   display: block;
-  width: 16.25em;
+  max-width: 16.25em;
+  width: 100%;
   height: 8.125em;
 }
 
@@ -325,11 +385,13 @@
   text-align: center;
   position: relative;
   top: 1.8125rem;
-  width: 13.125em;
+  max-width: 13.125em;
+  width: 100%;
 }
 
 .contBody .section_S06 {
   position: relative;
+  width: 100%;
   height: 32.375em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +409,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 90rem;
+  max-width: 1440px;
+  width: 100%;
   height: 8.2875em;
   background-color: white;
   -webkit-transform: skewY(-5deg);
@@ -403,6 +466,7 @@
 
 .contBody footer {
   position: relative;
+  width: 100%;
   height: 5.9375em;
   padding: 0 6.25rem;
   display: -webkit-box;
@@ -445,51 +509,28 @@
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-@media only screen and (max-width: 1024px) and (min-width: 320px) {
+@media only screen and (max-width: 1024px) and (min-width: 375px) {
   .contBody {
-    width: 64rem;
+    min-width: 840px;
     margin: 0;
-    overflow-x: hidden;
   }
   .contBody header {
-    position: fixed;
-    max-width: 64rem;
-    width: 100%;
     height: 4.5rem;
     background-color: rgba(255, 255, 255, 0.747);
-    padding: 0 3rem;
+    padding: 0 5%;
     z-index: 10;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .contBody header .logo {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .contBody header .nav_H01 {
-    padding-left: 2rem;
-    max-width: 35rem;
-    min-width: 30rem;
-    width: 100%;
-  }
   .contBody header .nav_H01 a {
     font-size: large;
   }
   .contBody .section_S01 {
-    height: 24rem;
-    padding: 4.5rem 0 1rem 0;
+    height: 22rem;
+    padding: 5rem 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,101 +538,84 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .contBody .section_S01 .title_S01 {
-    position: relative;
-    top: 0;
-  }
-  .contBody .section_S01 .paragraph_S01 {
-    font-size: x-large;
-    position: relative;
-    top: 0;
-  }
-  .contBody .section_S01 .button_S01 {
-    position: relative;
-    top: 0;
-  }
-  .contBody .section_S01 .button_S01:hover {
-    background: -webkit-gradient(linear, right top, left top, from(#0000fe), to(#00f0b8));
-    background: linear-gradient(270deg, #0000fe 0%, #00f0b8 100%);
-    color: white;
-  }
   .contBody .section_S02 {
-    height: 44rem;
+    height: 50rem;
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  }
+  .contBody .section_S02 #episodios {
+    top: -3rem;
   }
   .contBody .section_S02 .backGradient_S02 {
-    position: absolute;
-    width: 64rem;
-    height: 44rem;
-    -webkit-transform: skewY(-2deg);
-            transform: skewY(-2deg);
+    display: none;
   }
   .contBody .section_S02 .title_S02 {
-    position: relative;
-    top: 6rem;
-    left: 6rem;
+    top: 3rem;
+    left: 5rem;
   }
   .contBody .section_S02 .podcasts_S02 {
-    padding: 12rem 4rem 6rem 4rem;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* GRID */
-    grid-gap: 1rem;
-  }
-  .contBody .section_S02 .podcasts_S02 .podBox_S02 {
-    border: none;
-    width: 100%;
-    height: 14rem;
+    position: absolute;
+    top: 8rem;
   }
   .contBody .section_S03 {
-    height: 35rem;
+    position: relative;
+    width: 100%;
+    height: 40.84rem;
+    padding: 5% 5% 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contBody .section_S03 #nosotros {
+    position: absolute;
+    top: -4.5rem;
   }
   .contBody .section_S03 .img_phone_S03 {
-    position: absolute;
-    width: 20rem;
-    height: 30rem;
-    left: 15rem;
-    bottom: 5rem;
-  }
-  .contBody .section_S03 .title_S03 {
-    top: 4rem;
-    left: 40rem;
-  }
-  .contBody .section_S03 .paragraph_S03 {
-    font-size: x-large;
-    left: 40rem;
-    top: 10rem;
-    width: 29em;
-  }
-  .contBody .section_S04 {
+    display: block;
     position: relative;
-    height: 45.5rem;
-  }
-  .contBody .section_S04 .title_S04 {
-    left: 6rem;
-    top: -5rem;
-    width: 30rem;
-  }
-  .contBody .section_S05 .title_S05 {
     top: 2rem;
-    left: 6rem;
+    width: 20rem;
+    height: 32rem;
+  }
+  .contBody .section_S03 .col_sec_S03 {
+    max-width: 29rem;
+    min-width: 20rem;
+  }
+  .contBody .section_S03 .col_sec_S03 .title_S03 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 3em;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 3.875rem;
+    font-weight: 400;
+  }
+  .contBody .section_S03 .col_sec_S03 .paragraph_S03 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1em;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 1.5rem;
+    font-weight: 400;
+  }
+  .contBody .section_S04 #entrevistas {
+    top: -7rem;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .contBody {
-    width: 20rem;
+    width: 375px;
     margin: 0;
     overflow-x: hidden;
   }
   .contBody header {
-    width: 20rem;
+    width: 375px;
     height: 2.75rem;
     padding: 0;
   }
@@ -648,8 +672,11 @@
   .contBody header .nav_H01 {
     position: absolute;
     top: 2.75rem;
-    right: -21rem;
-    width: 20rem;
+    right: -375px;
+    padding-left: 0;
+    width: 375px;
+    min-width: 0;
+    width: 375px;
     height: 14rem;
     -webkit-transition: 0.6s;
     transition: 0.6s;
@@ -677,32 +704,34 @@
     color: rgba(200, 204, 233, 0.781);
   }
   .contBody header #menuHam_H01:checked ~ .nav_H01 {
-    -webkit-transform: translateX(-21rem);
-            transform: translateX(-21rem);
+    -webkit-transform: translateX(-375px);
+            transform: translateX(-375px);
   }
   .contBody .section_S01 {
-    height: 21.7rem;
-    padding-left: 1rem;
+    padding: 4.56rem 1rem 1.5rem 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
   }
   .contBody .section_S01 .title_S01 {
     font-size: 2.25rem;
     line-height: 2.63rem;
-    position: absolute;
-    top: 4.56rem;
-    width: 14rem;
+    position: relative;
+    width: 80%;
   }
   .contBody .section_S01 .paragraph_S01 {
     font-size: 0.88rem;
     line-height: 1.38rem;
-    position: absolute;
-    top: 10.81rem;
-    width: 18rem;
+    position: relative;
+    width: 100%;
   }
   .contBody .section_S01 .button_S01 {
     line-height: 1.38rem;
-    position: absolute;
-    top: 17.19rem;
-    width: 18rem;
+    position: relative;
+    width: 100%;
     height: 3rem;
   }
   .contBody .section_S02 {
@@ -710,7 +739,7 @@
   }
   .contBody .section_S02 .backGradient_S02 {
     position: absolute;
-    width: 20rem;
+    width: 375px;
     height: 73.25rem;
   }
   .contBody .section_S02 .title_S02 {
@@ -777,7 +806,7 @@
   }
   .contBody .section_S04 .gridImg_S04 .imgInvitados {
     border: none;
-    width: 20rem;
+    width: 375px;
     height: 15.19rem;
   }
   .contBody .section_S05 {
@@ -808,7 +837,7 @@
   }
   .contBody .section_S05 .iconCont_S05 .blockIcon {
     position: relative;
-    width: 20rem;
+    width: 375px;
     height: 10.13rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -831,7 +860,7 @@
   }
   .contBody .section_S06 {
     height: 21.31rem;
-    width: 20rem;
+    width: 375px;
   }
   .contBody .section_S06 .trianguloGradient_S06 {
     height: 1.8rem;

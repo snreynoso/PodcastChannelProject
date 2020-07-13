@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/style.css" />
   <script src="https://kit.fontawesome.com/b1d96e50a4.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans&display=swap"
-              rel="stylesheet" />
+    rel="stylesheet" />
   <title>bd - Podcast</title>
 </head>
 
@@ -24,18 +24,16 @@
       </div>
 
       <nav class="nav_H01">
-        <a>Episodios</a>
-        <a>Nosotros</a>
-        <a>Entrevistas</a>
-        <a>Tópico</a>
+        <a href=#episodios>Episodios</a>
+        <a href=#nosotros>Nosotros</a>
+        <a href=#entrevistas>Entrevistas</a>
+        <a href=#topico>Tópico</a>
       </nav>
     </header>
 
     <main>
       <section class="section_S01">
-        <h2 class="title_S01">
-          Hello <span class="line">world</span> pale blue dot.
-        </h2>
+        <h2 class="title_S01">Hello <span class="line">world</span> pale blue dot.</h2>
 
         <p class="paragraph_S01">
           El portal de podcasts que explora el mundo de la programación y la
@@ -46,6 +44,10 @@
       </section>
 
       <section class="section_S02">
+
+        <span id="episodios"></span>
+        <!--Para posicionar el salto cuando hago click en el menu-->
+
         <div class="backGradient_S02"></div>
 
         <h2 class="title_S02">Episodios</h2>
@@ -64,26 +66,35 @@
       </section>
 
       <section class="section_S03">
+
+        <span id="nosotros"></span>
+
         <img class="img_phone_S03" src="images/phone.png" alt="phone" />
 
-        <h2 class="title_S03">De dónde venimos</h2>
+        <div class="col_sec_S03">
+          <h2 class="title_S03">De dónde venimos</h2>
 
-        <div class="paragraph_S03">
-          <p>
-            Our posturings, our imagined self-importance, the delusion that we
-            have some privileged position in the Universe, are challenged by
-            this point of pale light.
-          </p><br>
-          <p>
-            Our planet is a lonely speck in the great
-            enveloping cosmic dark. In our obscurity, in all this vastness,
-            there is no hint that help will come from elsewhere to save us from
-            ourselves.
-          </p>
+          <div class="paragraph_S03">
+            <p>
+              Our posturings, our imagined self-importance, the delusion that we
+              have some privileged position in the Universe, are challenged by
+              this point of pale light.
+            </p><br>
+            <p>
+              Our planet is a lonely speck in the great
+              enveloping cosmic dark. In our obscurity, in all this vastness,
+              there is no hint that help will come from elsewhere to save us from
+              ourselves.
+            </p>
+          </div>
         </div>
+
       </section>
 
       <section class="section_S04">
+
+        <span id="entrevistas"></span>
+
         <h2 class="title_S04">Invitados/os estelares</h2>
 
         <div class="gridImg_S04">
@@ -97,6 +108,9 @@
       </section>
 
       <section class="section_S05">
+
+        <span id="topico"></span>
+
         <h2 class="title_S05">Algunos de nuestros temas</h2>
 
         <div class="iconCont_S05">
@@ -133,7 +147,7 @@
       <div>
         <h1 class="copyRight">© 2019— Hello blue pale dot</h1>
       </div>
-      
+
       <div class="iconsFooter">
         <a href="https://www.spotify.com/"><i class="fab fa-spotify"></i></a>
         <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
