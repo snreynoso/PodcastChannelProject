@@ -1,7 +1,7 @@
-/* ----------- iPad 1, 2, Mini and Air ----------- */
 @media only screen and (max-width: $tablet) and (min-width: $mobile) {
+
   .contBody {
-    min-width: 840px;
+    min-width: 820px;
     margin: 0;
 
     //------------------------ Header Styles ------------------------//
@@ -31,6 +31,10 @@
       flex-direction: column;
       justify-content: start;
       align-items: center;
+
+      .title_S01 {
+        font-size: 3rem;
+      }
     }
 
     //---------------------- Section 02 Styles ----------------------//
@@ -102,5 +106,6 @@
         top: -7rem;
       }
     }
+    
   }
 }

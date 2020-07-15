@@ -60,7 +60,7 @@
 
 .contBody header .nav_H01 a {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
+  font-size: 1rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 1.75rem;
@@ -93,7 +93,7 @@
 
 .contBody .section_S01 .title_S01 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 4em;
+  font-size: 4rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 5.25rem;
@@ -110,7 +110,7 @@
 
 .contBody .section_S01 .paragraph_S01 {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
+  font-size: 1rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 1.5rem;
@@ -121,7 +121,7 @@
 
 .contBody .section_S01 .button_S01 {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
+  font-size: 1rem;
   color: #060a24;
   letter-spacing: 0;
   text-align: center;
@@ -169,7 +169,7 @@
 
 .contBody .section_S02 .title_S02 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   color: #ffffff;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -239,7 +239,7 @@
 
 .contBody .section_S03 .col_sec_S03 .title_S03 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -248,7 +248,7 @@
 
 .contBody .section_S03 .col_sec_S03 .paragraph_S03 {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
+  font-size: 1rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 1.5rem;
@@ -267,7 +267,7 @@
 
 .contBody .section_S04 .title_S04 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -317,7 +317,7 @@
 
 .contBody .section_S05 .title_S05 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -377,7 +377,7 @@
 
 .contBody .section_S05 .iconCont_S05 .blockIcon div {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 2rem;
@@ -430,7 +430,7 @@
 
 .contBody .section_S06 .title_S06 {
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 3em;
+  font-size: 3rem;
   color: #ffffff;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -442,7 +442,7 @@
 
 .contBody .section_S06 .button_S06 {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   color: #060a24;
   letter-spacing: 0;
   text-align: center;
@@ -486,7 +486,7 @@
 
 .contBody footer .copyRight {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 1em;
+  font-size: 1rem;
   color: #060a24;
   letter-spacing: 0;
   line-height: 1.75rem;
@@ -508,10 +508,9 @@
   font-size: 1.4rem;
 }
 
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-@media only screen and (max-width: 1024px) and (min-width: 321px) {
+@media only screen and (max-width: 1024px) and (min-width: 450px) {
   .contBody {
-    min-width: 840px;
+    min-width: 820px;
     margin: 0;
   }
   .contBody header {
@@ -544,6 +543,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .contBody .section_S01 .title_S01 {
+    font-size: 3rem;
   }
   .contBody .section_S02 {
     height: 50rem;
@@ -589,7 +591,7 @@
   }
   .contBody .section_S03 .col_sec_S03 .title_S03 {
     font-family: "IBM Plex Sans", sans-serif;
-    font-size: 3em;
+    font-size: 3rem;
     color: #060a24;
     letter-spacing: 0;
     line-height: 3.875rem;
@@ -597,7 +599,7 @@
   }
   .contBody .section_S03 .col_sec_S03 .paragraph_S03 {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 1em;
+    font-size: 1rem;
     color: #060a24;
     letter-spacing: 0;
     line-height: 1.5rem;
@@ -608,14 +610,15 @@
   }
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 450px) {
   .contBody {
-    width: 321px;
+    min-width: 320px;
+    width: 100%;
     margin: 0;
     overflow-x: hidden;
   }
   .contBody header {
-    width: 321px;
+    width: 100%;
     height: 2.75rem;
     padding: 0;
   }
@@ -672,11 +675,11 @@
   .contBody header .nav_H01 {
     position: absolute;
     top: 2.75rem;
-    right: -321px;
+    right: -450px;
     padding-left: 0;
-    width: 321px;
+    width: 100%;
     min-width: 0;
-    width: 321px;
+    width: 100%;
     height: 14rem;
     -webkit-transition: 0.6s;
     transition: 0.6s;
@@ -704,8 +707,8 @@
     color: rgba(200, 204, 233, 0.781);
   }
   .contBody header #menuHam_H01:checked ~ .nav_H01 {
-    -webkit-transform: translateX(-321px);
-            transform: translateX(-321px);
+    -webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
   }
   .contBody .section_S01 {
     height: 21.69rem;
@@ -736,7 +739,7 @@
   }
   .contBody .section_S02 .backGradient_S02 {
     position: absolute;
-    width: 321px;
+    width: 100%;
     height: 73.25rem;
   }
   .contBody .section_S02 .title_S02 {
@@ -749,8 +752,17 @@
   .contBody .section_S02 .podcasts_S02 {
     padding: 0;
     top: 7.94rem;
-    left: 0.69rem;
-    display: block;
+    padding: 0 0.69rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contBody .section_S02 .podcasts_S02 .podBox_S02 {
     border: none;
@@ -764,6 +776,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contBody .section_S03 #nosotros {
     top: -6.5rem;
@@ -820,11 +835,11 @@
   }
   .contBody .section_S04 .gridImg_S04 .imgInvitados {
     display: block;
-    max-width: 321px;
+    max-width: 100%;
     max-height: 15.19rem;
     min-height: 15.19rem;
     border: 0;
-    width: 321px;
+    width: 100%;
     height: 15.19rem;
   }
   .contBody .section_S05 {
@@ -857,7 +872,7 @@
             align-items: center;
   }
   .contBody .section_S05 .iconCont_S05 .blockIcon {
-    width: 321px;
+    width: 100%;
     max-width: 18rem;
     height: 10.13rem;
     display: -webkit-box;
@@ -882,16 +897,15 @@
   }
   .contBody .section_S06 {
     height: 21.31rem;
-    width: 321px;
+    width: 100%;
   }
   .contBody .section_S06 .trianguloGradient_S06 {
-    height: 1.8rem;
+    height: 2.5rem;
   }
   .contBody .section_S06 .title_S06 {
     font-size: 2.25rem;
     line-height: 2.63rem;
     top: 4rem;
-    left: 1rem;
     width: 18rem;
   }
   .contBody .section_S06 .button_S06 {

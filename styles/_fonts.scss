@@ -6,7 +6,7 @@ $font_color_white: #ffffff;
 // ------ Header Fonts ------ //
 @mixin font_menu_H01 {
   font-family: $font_IBM_Plex_Mono;
-  font-size: 1em;
+  font-size: 1rem;
   color: $font_color_blue;
   letter-spacing: 0;
   line-height: 1.75rem;
@@ -17,7 +17,7 @@ $font_color_white: #ffffff;
 // ------ Main Fonts ------ //
 @mixin font_title_S01 {
   font-family: $font_IBM_Plex_Sans;
-  font-size: 4em;
+  font-size: 4rem;
   color: $font_color_blue;
   letter-spacing: 0;
   line-height: 5.25rem;
@@ -26,7 +26,7 @@ $font_color_white: #ffffff;
 
 @mixin font_paragraph_S01_S03 {
   font-family: $font_IBM_Plex_Mono;
-  font-size: 1em;
+  font-size: 1rem;
   color: $font_color_blue;
   letter-spacing: 0;
   line-height: 1.5rem;
@@ -35,7 +35,7 @@ $font_color_white: #ffffff;
 
 @mixin font_button_S01 {
   font-family: $font_IBM_Plex_Mono;
-  font-size: 1em;
+  font-size: 1rem;
   color: $font_color_blue;
   letter-spacing: 0;
   text-align: center;
@@ -46,7 +46,7 @@ $font_color_white: #ffffff;
 
 @mixin font_title_S02 {
   font-family: $font_IBM_Plex_Sans;
-  font-size: 3em;
+  font-size: 3rem;
   color: $font_color_white;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -55,7 +55,7 @@ $font_color_white: #ffffff;
 
 @mixin font_title_S03_S04_S05 {
   font-family: $font_IBM_Plex_Sans;
-  font-size: 3em;
+  font-size: 3rem;
   color: $font_color_blue;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -64,7 +64,7 @@ $font_color_white: #ffffff;
 
 @mixin font_title_S05_01 {
   font-family: $font_IBM_Plex_Sans;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: $font_color_blue;
   letter-spacing: 0;
   line-height: 2rem;
@@ -74,7 +74,7 @@ $font_color_white: #ffffff;
 
 @mixin font_title_S06 {
   font-family: $font_IBM_Plex_Sans;
-  font-size: 3em;
+  font-size: 3rem;
   color: $font_color_white;
   letter-spacing: 0;
   line-height: 3.875rem;
@@ -84,7 +84,7 @@ $font_color_white: #ffffff;
 
 @mixin font_button_S06 {
   font-family: $font_IBM_Plex_Mono;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   color: $font_color_blue;
   letter-spacing: 0;
   text-align: center;
@@ -96,7 +96,7 @@ $font_color_white: #ffffff;
 // ------ Footer Fonts ------ //
 @mixin font_footer {
   font-family: $font_IBM_Plex_Mono;
-  font-size: 1em;
+  font-size: 1rem;
   color: $font_color_blue;
   letter-spacing: 0;
   line-height: 1.75rem;
