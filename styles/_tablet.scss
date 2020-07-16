@@ -1,5 +1,4 @@
 @media only screen and (max-width: $tablet) and (min-width: $mobile) {
-
   .contBody {
     min-width: 820px;
     margin: 0;
@@ -39,7 +38,7 @@
 
     //---------------------- Section 02 Styles ----------------------//
     .section_S02 {
-      height: 50rem;
+      height: 45rem;
       background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
 
       #episodios {
@@ -56,8 +55,15 @@
       }
 
       .podcasts_S02 {
-        position: absolute;
+        // position: absolute;
         top: 8rem;
+        max-width: $tablet;
+        width: 100%;
+        /* GRID PODCAST */
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
       }
     }
 
@@ -101,11 +107,9 @@
 
     //---------------------- Section 04 Styles ----------------------//
     .section_S04 {
-
       #entrevistas {
         top: -7rem;
       }
     }
-    
   }
 }

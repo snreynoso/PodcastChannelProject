@@ -192,14 +192,14 @@
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  grid-gap: 4.5em;
+  grid-gap: 4.5rem;
 }
 
 .contBody .section_S02 .podcasts_S02 .podBox_S02 {
   border: none;
-  max-width: 36.5em;
+  max-width: 36.5rem;
   width: 100%;
-  height: 14.5em;
+  height: 14.5rem;
 }
 
 .contBody .section_S03 {
@@ -548,7 +548,7 @@
     font-size: 3rem;
   }
   .contBody .section_S02 {
-    height: 50rem;
+    height: 45rem;
     background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
   }
   .contBody .section_S02 #episodios {
@@ -562,8 +562,17 @@
     left: 5rem;
   }
   .contBody .section_S02 .podcasts_S02 {
-    position: absolute;
     top: 8rem;
+    max-width: 1024px;
+    width: 100%;
+    /* GRID PODCAST */
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-gap: 1rem;
   }
   .contBody .section_S03 {
     position: relative;
