@@ -4,7 +4,7 @@
     width: 100%;
     margin: 0;
     overflow-x: hidden;
-
+    
     //------------------------ Header Styles ------------------------//
     header {
       width: 100%;
@@ -153,14 +153,17 @@
       }
 
       .podcasts_S02 {
-        padding: 0;
         top: 7.94rem;
+        height: 58.31rem;
         padding: 0 0.69rem;
 
+        grid-gap:0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
 
+        
         .podBox_S02 {
           border: none;
           width: 18.63rem;
